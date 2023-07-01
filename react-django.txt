@@ -1,0 +1,52 @@
+pip install django-cors-headers                   //check the django cors headers for more information
+in settings.py:
+inside installed apps paste this:
+'corsheaders',
+
+inside middleware paste this:
+    "corsheaders.middleware.CorsMiddleware",
+then paste this
+# CORS_ALLOW_ALL_ORIGINS: True
+CORS_ALLOWED_ORIGINS = [   
+    "http://localhost:3000",
+]
+
+CORS_ALLOW_METHODS = (
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH", #updates single data
+    "POST",
+    "PUT", #updates all data
+)
+
+
+
+npx create-react-app app-name
+cd app name
+npm install react-router-dom axios react-toastify
+
+  //to add tailwind in your react app,open terminal in you react-app and type
+  go to https://tailwindcss.com/docs/guides/create-react-app
+
+npm install -D tailwindcss
+npx tailwindcss init
+
+now a new file tailwind.config.js should be created open it and copy this inside content     "./src/**/*.{js,jsx,ts,tsx}",
+
+code should look like this :
+content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+
+now open index.css and remove all and paste this :
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+rename the app.js file to app.jsx
+this will make that you don't have to type the tags and suggestion will show like in vanilla html
+
+in extentions install tailwind css intellisense
